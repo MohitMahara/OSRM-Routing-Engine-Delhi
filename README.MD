@@ -24,8 +24,8 @@ If you have Docker installed, you can start the routing engine locally in three 
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/MohitMahara/RyDz-OSRM-Service.git
-cd RyDz-OSRM-Service
+git clone https://github.com/MohitMahara/OSRM-Routing-Engine-Delhi.git
+cd OSRM-Routing-Engine-Delhi
 ```
 
 ### 2. Build the Docker Image
