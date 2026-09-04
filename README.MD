@@ -31,13 +31,13 @@ cd RyDz-OSRM-Service
 ### 2. Build the Docker Image
 Because the graph data is compressed to bypass GitHub limits, Docker will automatically extract the `.tar.gz` file during this build step to prepare the engine.
 ```bash
-docker build -t OSRM-Routing-Engine-Delhi
+docker build -t osrm-routing-engine-delhi .
 ```
 
 ### 3. Start the Server
 Since the map data is now baked directly into the image, you do not need to mount any local folders. Just bind the port and run the container:
 ```bash
-docker run -p 5000:5000 OSRM-Routing-Engine-Delhi
+docker run -p 5000:5000 osrm-routing-engine-delhi
 ```
 
 The routing API is now live and listening for requests at `http://localhost:5000`.
@@ -72,5 +72,3 @@ GET http://localhost:5000/route/v1/driving/77.2167,28.6328;77.2295,28.6129?overv
   ]
 }
 ```
-
----
