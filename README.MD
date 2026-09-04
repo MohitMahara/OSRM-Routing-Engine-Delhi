@@ -72,3 +72,11 @@ GET http://localhost:5000/route/v1/driving/77.2167,28.6328;77.2295,28.6129?overv
   ]
 }
 ```
+---
+
+## License & Attribution
+
+- **Infrastructure & Code:** The Dockerfile and deployment configurations are licensed under the [MIT License](LICENSE).
+- **Map Data:** The routing graph data (`.tar.gz.part*`) is derived from [OpenStreetMap](https://www.openstreetmap.org/) data. OpenStreetMap® is open data, licensed under the [Open Data Commons Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/) by the OpenStreetMap Foundation (OSMF). 
+
+You are free to use this microservice, but any public or commercial use of this routing engine must include standard OpenStreetMap attribution as per their guidelines.
